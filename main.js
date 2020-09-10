@@ -81,7 +81,7 @@ form.addEventListener('submit',function(e){
     e.preventDefault()
     if (password.value ===''){
         showError(password,'password is required')
-    }else if ((password.value.length < 3) || (password.value.length>12)){
+    }else if ((password.value.length < 8) || (password.value.length>16)){
          checkLength(password,8,16)
     } 
     else {
